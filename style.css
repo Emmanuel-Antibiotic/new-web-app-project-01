@@ -1,0 +1,53 @@
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1606619788423-005922947e38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+}
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero .content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+}
+.highlight {
+  color: lightgreen;
+}
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button.primary {
+  background-color: green;
+  color: white;
+}
+button.primary:hover {
+  background-color: darkgreen;
+}
+button.secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+}
+button.secondary:hover {
+  background-color: white;
+  color: black;
+}
