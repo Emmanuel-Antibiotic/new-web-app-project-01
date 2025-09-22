@@ -2,21 +2,22 @@ document.querySelector(".primary").addEventListener("click", () => {alert("Booki
 });
 document.querySelector(".secondary").addEventListener("click", () => {alert("Video player coming soon!");
 });
-const menuBtn = document.getElementById("menuBtn");
-const closeBtn = document.getElementById("closeBtn");
-const mobileNav = document.getElementById("mobileNav");
+const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+const mobileSheet = document.getElementById("mobile-sheet");
 
 menuBtn.addEventListener("click", () => {
-  mobileNav.classList.add("active");
+  mobileSheet.classList.add("open");
 });
 
 closeBtn.addEventListener("click", () => {
-  mobileNav.classList.remove("active");
+  mobileSheet.classList.remove("open");
 });
 
-// Close mobile nav when clicking a link
-document.querySelectorAll(".mobile-links a").forEach(link => {
+// Close menu when clicking a link
+document.querySelectorAll(".mobile-nav a").forEach(link => {
   link.addEventListener("click", () => {
-    mobileNav.classList.remove("active");
+    mobileSheet.classList.remove("open");
   });
 });
+
